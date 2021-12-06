@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Marcel Briseno
+    Class:   Web & Distributed Programming 
+    Project: Proposal Site 
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Project Proposal</title>
+     
+    </head>
+  <body>
+<h1>Project Proposal</h1>
+<ol type="1">
+    <li>Product Name: playlistDB</li>
+    <li>Team Members: Marcel</li>
+    <li> The purpose of this Database is to separate a list of unorganized songs from my soundcloud likes into three separate tables containing information about the songs, albums, and artists.  When creating the database the initial attributes will be basic such as Album name, Artist Name, song Length, and song name. When writing queries and adding information to the Database I plan to add attributes such as  links to songs, artist profiles, artist label affiliation,music videos, links to lyrics, and album release dates. 
+        I will push the code to github and deploy it on microsoft azure with as a web application.
+    </li>
+    <li></li>
+    <li>Proposal Last Updated (12/5/21) This is the final draft</li>
+    <li>Feature List</li>
+    <ul>
+        <h1>Songs</h1>
+        <li>There will be a  table which holds the entire  list of all the songs titled SoundCloud Likes. The fields will be approximately 100 at first. The initial Attributes of the songs will simply be artist, genre, length of song, album, and song ID. A unique ID will be automatically generated for every song entered into the database. This will be the primary key for this table as well and the foreign key will be Album which references the album ID. Album cannot be null as well as the name of the song. Every Album will match an ID in the album table. Later on links to songs, music videos, and lyrics will be added with a query. </li>
+        <h1>Albums</h1>
+        <li>The Albums table will initially contain information such as album name, length, artist, and album ID. The Primary Key for this table will be album ID and the foreign key will be artist which references the artist ID. The album and artist name may not be null, the artist must match an artist ID. Additional attributes will be added with a query after creating the database such as release data
+        </li>
+        <h1>Artists</h1>
+        <li>Initially the Artist table will hold information such as artist Name, age, and Artist ID. The name of the artist cannot be null and each artist will be assigned a unique ID. The primary key for this table will be the artist ID. Later attributes such as links to the artist profiles  and label affiliation will be added with queries.</li>
+    </ul>
+    <br>
+    <li>Future Feature List (non-prioritized list of end user features that would be implemented if there was more time)</li>
+
+    <ul>
+        <li>A search function to look for different songs in the table that has all the songs and  is displayed on the screen 
+        </li>
+    </ul>
+    <li>Basic Technical Features (list of technical features being implemented that demonstrates things you have learned in the class)</li>
+    <ul>
+        <li>Create mysql database of music
+        </li>
+        <li><a href="https://lucid.app/documents/embeddedchart/62734ac1-d456-44ff-865f-864c500c16e6?invitationId=inv_4a01670b-5919-4464-9f43-ef5a08382582#">Data Base Diagram</a></li>
+        <li>Display this database graphically somehow using presumably Javascript HTML ,CSS, and PHP</li>
+        <li>Host it on Github</li>
+        <li>Deploy it on microsoft azure</li>
+        <li>basic GUI on the screen</li>
+    </ul>
+    <li>Advanced Technical Features (list of technical features being implemented that go beyond what we learned in class)</li>
+    <ul>
+        <li>Possibly host it using AWS instead of microsoft azure</li>
+        <li>Advanced GUI</li>
+        <li>Ability to play the songs</li>
+       </ul>
+</ol>
+
+  </body>
+    
+</html>
